@@ -1,4 +1,4 @@
 class CharacterSerializer
   include FastJsonapi::ObjectSerializer
-  attributes 
+  attributes :name, :image_link, :lane_id
 end

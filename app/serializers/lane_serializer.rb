@@ -1,4 +1,4 @@
 class LaneSerializer
   include FastJsonapi::ObjectSerializer
-  attributes 
+  attributes :name
 end
