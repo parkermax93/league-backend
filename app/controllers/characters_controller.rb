@@ -1,15 +1,15 @@
 class CharactersController < ApplicationController
 
     def index
-        characters = Character.all 
+        character = Character.all 
 
-        render json: CharacterSerializer.new(characters)
+        render json: CharacterSerializer.new(character)
     end
 
     def show
-        characters = Lane.find_by(name: params[:lane_name]).characters
+        character = Lane.find_by(name: params[:lane_name]).character
 
-        render json: CharacterSerializer.new(lane.sample)
+        render json: CharacterSerializer.new(character.sample)
     end
 
     def create 
