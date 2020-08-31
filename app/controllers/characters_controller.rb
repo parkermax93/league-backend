@@ -7,9 +7,9 @@ class CharactersController < ApplicationController
     end
 
     def show
-        character = Lane.find_by(name: params[:lane_name]).character
+        character = Lane.find_by(name: params[:lane_name]).characters
 
-        render json: CharacterSerializer.new(character.sample)
+        render json: CharacterSerializer.new(character)
     end
 
     def create 
