@@ -4,4 +4,3 @@ This is the League Generator website! This allows a user to view the champions t
 
 Installation: 
 To install this application, you will need to download the front-end and back-end repos at https://github.com/parkermax93/league-frontend, and https://github.com/parkermax93/league-backend. Once these are downloaded, you will need to run 'bundle install' to make sure all required gems are installed and able to be ran. The backend server will need to go live by typing 'rails s' in the console, and then opening the index.html file on the front-end repo with your internet browser of choice (although this was only tested in Google Chrome).
-
